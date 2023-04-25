@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { menu, close } from '../assets'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -20,7 +20,7 @@ const Navbar = () => {
           setActive('')
           window.scrollTo(0, 0)
         }} >
-          <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
+          <img src='https://res.cloudinary.com/dwgberjxq/image/upload/v1682444695/3D/logo_white_transparent_spkbwb.svg' alt="logo" className='w-10 h-12 object-contain' />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">Uncle Sula &nbsp; <span className='sm:block hidden' >| Tech Bro</span> </p>
         </Link>
         <ul className="list-none hidden sm:flex  flex-row gap-10">
